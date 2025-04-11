@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemantauan Banjir</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Pemantauan Banjir</h1>
+    
+    <!-- Status Indikator -->
+    <div class="status-box" id="statusIndicator">
+      <h2>Status: <span id="statusText">Memuat...</span></h2>
+      <div class="led-indicator" id="ledIndicator"></div>
+    </div>
+
+    <!-- Grafik Ketinggian Air -->
+    <div class="chart-container">
+      <canvas id="waterLevelChart"></canvas>
+    </div>
+
+    <!-- Data Terkini -->
+    <div class="data-box">
+      <h3>Ketinggian Air Terkini:</h3>
+      <p id="currentHeight">0 cm</p>
+    </div>
+
+    <!-- Log Aktivitas -->
+    <div class="log-box">
+      <h3>Log Aktivitas</h3>
+      <ul id="activityLog"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+# Ignor semua file di folder node_modules/
+node_modules/
+
+# Ignor file .env
+.env
