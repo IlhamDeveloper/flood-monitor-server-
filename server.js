@@ -10,12 +10,12 @@ const PORT = process.env.PORT || 3000;
 
 // Konfigurasi PostgreSQL (gunakan Environment Variables)
 const sequelize = new Sequelize(process.env.DATABASE_URL, {
-  dialect: 'postgres',
-  ssl: true,
+  dialect: 'postgres', // Gunakan PostgreSQL
+  ssl: true, // Aktifkan SSL
   dialectOptions: {
     ssl: {
-      require: true,
-      rejectUnauthorized: false
+      require: true, // Wajibkan penggunaan SSL
+      rejectUnauthorized: false // Nonaktifkan validasi sertifikat SSL
     }
   }
 });
